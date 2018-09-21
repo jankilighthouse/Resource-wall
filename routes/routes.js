@@ -23,14 +23,14 @@ app.route('/login')
   .post(middleware.errorCheck, middleware.userAuthentication, (req, res) => {
     const user = {
       email: req.body.email,
-      
+
     }
 
     userHelper.loginUser(user, (foundUser) => {
       req.session.email = foundUser.email;
       res.render('index', {user: foundUser});
     });
-    
+
   });
 
 // logout current user
