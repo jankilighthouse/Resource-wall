@@ -3,6 +3,8 @@ const app = express.Router();
 const userHelper = require('../lib/user-helper');
 const resourceHelper = require('../lib/resource-helper');
 const middleware = require('../middleware');
+const moment = require('moment');
+const path = require('path');
 
 // Home page
 app.get("/", (req, res) => {
@@ -42,7 +44,7 @@ app.route('/logout')
 app.route('/register')
 
   .post(middleware.errorCheck, middleware.registerValidator, (req, res) => {
-    // registration
+    // registratino
     const newUser = {
       name: req.body.name,
       email: req.body.email,
@@ -63,7 +65,7 @@ app.route('/resources/new')
     res.render('create_resource');
   })
 
-  .post(middleware.isLogin, (req, res) => {
+  .post(middleware.isLogin, middleware.postingValidator, (req, res) => {
     // function to create new resource
     const newResource = {
       title: req.body.title,
@@ -113,6 +115,9 @@ app.route('/resources/:id')
 
     const resourceId = req.params.id;
     resourceHelper.getResource(resourceId, (resource, comments) => {
+      comments.forEach((comment) => {
+        comment.created_at = moment(comment.created_at).fromNow();
+      });
       res.render('main', { resource: resource, comments: comments });
     })
   });
@@ -120,7 +125,7 @@ app.route('/resources/:id')
 // Comment/Like/Rate specific resource
 
 app.route('/resources/:id/comment')
-  .post(middleware.isLogin, (req, res) => {
+  .post(middleware.isLogin, middleware.postingValidator, (req, res) => {
 
     //function to create comment on resource
     const comment = req.body.comment;
@@ -151,8 +156,8 @@ app.route( '/resources/:id/rate')
 app.route('/resources/:id/like')
   .post((req, res) => {
     if (!req.session.user_id) {
-      const url = '/';
-      res.json({url});
+      const message = 'Guest cannot Like';
+      res.json({message});
     } else {
       resourceHelper.newLike(req.session.user_id, req.body.resource_id, (err, increment) => {
         res.json({increment})
@@ -167,7 +172,7 @@ app.route('/users/:id')
 
     // function to get user profile page
     const currentUser = {
-      id: req.session.user_i,
+      id: req.session.user_id,
       user_id: req.params.id
     }
 
@@ -216,7 +221,7 @@ app.route('/users/:id/resources')
   })
 
 app.route('/*').get((req, res) => {
-    res.send('404 Page not found');
+    res.sendFile('404.html', { root: path.join(__dirname, '../public') });
   });
 
 module.exports = app;
