@@ -1,4 +1,30 @@
-# Node Skeleton
+# Resource Wall (Midterm Group Project)
+
+Resource wall is an app that makes easy resource storage happen. It allows learners to save learning resources like tutorials and blogs in a central place that is publicly available to any user. 
+
+Created by Janki Patel,Cheng and Kenzie
+
+## Final Product
+Home page
+!["Screenshot of Tweeter-app"]
+
+Register page
+!["Screenshot of Tweeter-app"]
+
+User resources page
+!["Screenshot of Tweeter-app"]
+
+Create resources page
+!["Screenshot of Tweeter-app"]
+!["Screenshot of Tweeter-app"]
+
+
+Profile page
+!["Screenshot of Tweeter-app"]
+
+Search page
+!["Screenshot of Tweeter-app"]
+
 
 ## Project Setup
 
