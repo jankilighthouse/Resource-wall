@@ -48,7 +48,7 @@ const middleware = {
         return next();
       } else {
         req.flash("error", "Invalid Password or Email");
-        res.redirect('/')
+        res.redirect('/');
       }
     })
   },

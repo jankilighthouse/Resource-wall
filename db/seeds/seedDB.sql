@@ -1,5 +1,6 @@
 \c midterm labber
 
+
 DROP TABLE likes;
 DROP TABLE rates;
 DROP TABLE comments;
@@ -62,7 +63,7 @@ CREATE TABLE likes (
 );
 
 
-INSERT INTO resources (title, topic, description, url, user_id) VALUES 
+INSERT INTO resources (title, topic, description, url, user_id) VALUES
 ('jQuery', 'Web Development', 'A feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. ', 'https://jquery.com/', 1),
 ('ReactJS', 'Web Development', 'React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.', 'https://reactjs.org/', 1),
 ('Express', 'Web Development', 'Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.', 'https://expressjs.com/', 1),
