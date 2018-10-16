@@ -6,24 +6,24 @@ Created by Janki Patel,Cheng and Kenzie
 
 ## Final Product
 Home page
-!["Screenshot of Resource wall-app"]
+!["Screenshot of Resource wall-app"](https://github.com/jankilighthouse/Resource-wall/blob/master/docs/homepage.png?raw=true)
 
 Register page
-!["Screenshot of Resource wall-app"]
+!["Screenshot of Resource wall-app"](https://github.com/jankilighthouse/Resource-wall/blob/master/docs/user-register.png?raw=true)
 
 User resources page
-!["Screenshot of Resource wall-app"]
+!["Screenshot of Resource wall-app"](https://github.com/jankilighthouse/Resource-wall/blob/master/docs/user-resources.png?raw=true)
 
 Create resources page
-!["Screenshot of Resource wall-app"]
-!["Screenshot of Resource wall-app"]
+!["Screenshot of Resource wall-app"](https://github.com/jankilighthouse/Resource-wall/blob/master/docs/create-resource.png?raw=true)
+!["Screenshot of Resource wall-app"]https://github.com/jankilighthouse/Resource-wall/blob/master/docs/rate-comment.png?raw=true
 
 
 Profile page
-!["Screenshot of Resource wall-app"]
+!["Screenshot of Resource wall-app"](https://github.com/jankilighthouse/Resource-wall/blob/master/docs/create-profile.png?raw=true)
 
 Search page
-!["Screenshot of Resource wall-app"]
+!["Screenshot of Resource wall-app"](https://github.com/jankilighthouse/Resource-wall/blob/master/docs/search-resources.png?raw=true)
 
 
 ## Project Setup
