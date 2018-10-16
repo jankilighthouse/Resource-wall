@@ -16,8 +16,7 @@ User resources page
 
 Create resources page
 !["Screenshot of Resource wall-app"](https://github.com/jankilighthouse/Resource-wall/blob/master/docs/create-resource.png?raw=true)
-!["Screenshot of Resource wall-app"]https://github.com/jankilighthouse/Resource-wall/blob/master/docs/rate-comment.png?raw=true
-
+!["Screenshot of Resource wall-app"](https://github.com/jankilighthouse/Resource-wall/blob/master/docs/rate-comment.png?raw=true)
 
 Profile page
 !["Screenshot of Resource wall-app"](https://github.com/jankilighthouse/Resource-wall/blob/master/docs/create-profile.png?raw=true)
