@@ -6,24 +6,24 @@ Created by Janki Patel,Cheng and Kenzie
 
 ## Final Product
 Home page
-!["Screenshot of Tweeter-app"]
+!["Screenshot of Resource wall-app"]
 
 Register page
-!["Screenshot of Tweeter-app"]
+!["Screenshot of Resource wall-app"]
 
 User resources page
-!["Screenshot of Tweeter-app"]
+!["Screenshot of Resource wall-app"]
 
 Create resources page
-!["Screenshot of Tweeter-app"]
-!["Screenshot of Tweeter-app"]
+!["Screenshot of Resource wall-app"]
+!["Screenshot of Resource wall-app"]
 
 
 Profile page
-!["Screenshot of Tweeter-app"]
+!["Screenshot of Resource wall-app"]
 
 Search page
-!["Screenshot of Tweeter-app"]
+!["Screenshot of Resource wall-app"]
 
 
 ## Project Setup
